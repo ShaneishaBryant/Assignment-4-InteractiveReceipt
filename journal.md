@@ -1,0 +1,3 @@
+Instead of putting all the store details into a single storeInfo object, you could have saved each detail in its own standalone global variable. What are the advantages of grouping related data into an object versus managing separate variables?
+
+Grouping related data into an object improves code readability and simplifies function arguments. Instead of passing multiple individual variables into a function, which leads to long cumbersome argument lists, you can pass a single object. Also, it makes the code self-documenting for other developers by clearly showing which values belong together.
