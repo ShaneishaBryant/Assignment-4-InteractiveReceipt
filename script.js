@@ -12,7 +12,7 @@ let storeInfo = {
     tableFee: parseFloat(tableFee).toFixed(2) //formated decimal string
 }
 
-console.log("Hello Welcome to " + storeInfo.name + " the standard table fee is $" + storeInfo.tableFee + ".")
+console.log("Hello, Welcome to " + storeInfo.name + " the standard table fee is $" + storeInfo.tableFee + ".")
 
 //create array
 let receiptItems = [];
@@ -31,8 +31,22 @@ while(prompt("Would you like to order? Type 'Y' for yes. Type 'N' for no.")?.toU
 }
 
 console.log("Total Items Added: " + receiptItems.length)
-//print each item from array
-receiptItems.forEach(item => {
+
+//print each item from array to test data 
+/*receiptItems.forEach(item => {
     console.log(item.name + " | $" + item.price.toFixed(2));
-});
+});*/
+
+
+//intialize subtotal counter 
+let subtotal = 0; 
+
+//iterate through reciptItems array
+for(item of receiptItems){
+    console.log(item.name + " -- $" + item.price.toFixed(2)) //print each item to console
+
+    subtotal += item.price; 
+}
+
+console.log("Food Subtotal: " + subtotal.toFixed(2))
 

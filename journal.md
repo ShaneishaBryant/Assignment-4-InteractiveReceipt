@@ -8,3 +8,12 @@ Grouping related data into an object improves code readability and simplifies fu
 What happens if you set a value to a property of an object that didn’t exist before? How does that effect the ways that you can create and set object properties?
 
 If you assign a value to a non-existent property on an object, JavaScript automatically creates that property and assigns the value to it. This means you can initialize an empty object and add properties dynamically whenever needed.
+
+
+
+
+                            ~~~~~~~
+
+Reflect on using the for...of loop to move through your list. How did you target and pull out just the price property from each item object inside the loop?
+
+Using dot notation I let Java know which property I wanted to access. This allow me to extract only the number value so I could use it add to subtotal. 
