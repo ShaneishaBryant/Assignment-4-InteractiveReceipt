@@ -13,3 +13,26 @@ let storeInfo = {
 }
 
 console.log("Hello Welcome to " + storeInfo.name + " the standard table fee is $" + storeInfo.tableFee + ".")
+
+//create array
+let receiptItems = [];
+
+while(prompt("Would you like to order? Type 'Y' for yes. Type 'N' for no.")?.toUpperCase() === "Y"){
+    let itemName = prompt("Enter name of item: ");
+    let itemPrice = prompt("Price?:");
+    let price = Number(itemPrice); //converts into number
+
+    let order = {
+        name: itemName,
+        price: price, 
+    }
+
+    receiptItems.push(order); //item object
+}
+
+console.log("Total Items Added: " + receiptItems.length)
+//print each item from array
+receiptItems.forEach(item => {
+    console.log(item.name + " | $" + item.price.toFixed(2));
+});
+
