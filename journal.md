@@ -17,3 +17,11 @@ If you assign a value to a non-existent property on an object, JavaScript automa
 Reflect on using the for...of loop to move through your list. How did you target and pull out just the price property from each item object inside the loop?
 
 Using dot notation I let Java know which property I wanted to access. This allow me to extract only the number value so I could use it add to subtotal. 
+
+
+
+                            ~~~~~~~~
+
+Reflect on how using .pop() affected your data. How did removing an item from the array automatically change your final calculations when you ran the total logic?
+
+When executing the total calculation logic, the last item was removed from the array using .pop(). As a result, the final grand total reflects only the remaining items. For example, if 3 items were entered, the grand total calculates the price for 2 items.
